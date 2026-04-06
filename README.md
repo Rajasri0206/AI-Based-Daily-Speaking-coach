@@ -15,7 +15,7 @@ This application acts as a **personal AI speaking coach** that:
 * Analyzes grammar and fluency
 * Suggests improvements
 * Provides a speaking score
-* Tracks user progress over time
+* Tracks user progress over time 
 
 ---
 
