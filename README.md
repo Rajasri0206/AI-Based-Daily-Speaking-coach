@@ -15,7 +15,7 @@ This application acts as a **personal AI speaking coach** that:
 * Analyzes grammar and fluency
 * Suggests improvements
 * Provides a speaking score
-* Tracks user progress over time
+* Tracks user progress over time 
 
 ---
 
@@ -158,7 +158,7 @@ AI-Based-Daily-Speaking-Coach/
 ### 1. Clone Repository
 
 ```bash id="clone1"
-git clone https://github.com/your-username/AI-Based-Daily-Speaking-Coach.git
+git clone https://github.com/Rajasri0206/AI-Based-Daily-Speaking-coach.git
 cd AI-Based-Daily-Speaking-Coach
 ```
 
