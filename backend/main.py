@@ -12,7 +12,7 @@ from services.scoring import calculate_score
 from database.db import init_db, save_session
 
 init_db()
-#---------------
+#----------------
 app = FastAPI(title="AI Speaking Coach API")
 
 # Enable CORS (important for React frontend)
