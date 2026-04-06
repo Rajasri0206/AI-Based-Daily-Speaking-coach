@@ -7,8 +7,12 @@ import os
 from services.speech_to_text import transcribe_audio
 from services.nlp_service import correct_grammar
 from services.audio_analysis import analyze_audio
-from services.scoring import calculate_score
+from services.scoring import calculate_score 
+#new ------
+from database.db import init_db, save_session
 
+init_db()
+#---------------
 app = FastAPI(title="AI Speaking Coach API")
 
 # Enable CORS (important for React frontend)
@@ -75,6 +79,8 @@ async def analyze_audio_api(file: UploadFile = File(...)):
             "audio_metrics": audio_metrics,
             "scores": scores
         }
+    #new----------------
+        save_session(transcript, scores["overall_score"])
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
